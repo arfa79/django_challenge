@@ -7,4 +7,7 @@ class PersonalInfoSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class InsuranceInfoSerializer(serializers.ModelSerializer):
-    pass
+    class Meta:
+        model = InsuranceInfo
+        fields = 'car', 'policy_number', 'user'
+    return fields
